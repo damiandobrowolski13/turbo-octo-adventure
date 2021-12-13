@@ -1,0 +1,126 @@
+#Baseball Runs Estimator
+import random
+outs=0
+num=0
+print("Welcome to Baseball Runs Estimator")
+ba1=int(input("Enter first player's batting average: "))
+ba2=int(input("Enter second player's batting average: "))
+ba3=int(input("Enter third player's batting average: "))
+ba4=int(input("Enter fourth player's batting average: "))
+ba5=int(input("Enter fifth player's batting average: "))
+ba6=int(input("Enter sixth player's batting average: "))
+ba7=int(input("Enter seventh player's batting average: "))
+ba8=int(input("Enter eighth player's batting average: "))
+ba9=int(input("Enter ninth player's batting average: "))
+base1=random.randint(1,4)
+base2=random.randint(1,4)
+base3=random.randint(1,4)
+base4=random.randint(1,4)
+base5=random.randint(1,4)
+base6=random.randint(1,4)
+base7=random.randint(1,4)
+base8=random.randint(1,4)
+base9=random.randint(1,4)
+rand1=random.randint(0,1000)
+print("Rand1: ",rand1)
+rand2=random.randint(0,1000)
+print("Rand2: ",rand2)
+rand3=random.randint(0,1000)
+print("Rand3: ",rand3)
+rand4=random.randint(0,1000)
+print("Rand4: ",rand4)
+rand5=random.randint(0,1000)
+print("Rand5: ",rand5)
+rand6=random.randint(0,1000)
+print("Rand6: ",rand6)
+rand7=random.randint(0,1000)
+print("Rand7: ",rand7)
+rand8=random.randint(0,1000)
+print("Rand8: ",rand8)
+rand9=random.randint(0,1000)
+print("Rand9: ",rand9)
+while outs<3 and num<9:
+    if ba1>rand1:
+        num+=1
+        runs1=base1/4
+        print("Base1:",base1)
+        print("---Runs1:",runs1)
+    else:
+        outs=outs+1
+        runs1=0
+    if ba2>rand2:
+        num+=1
+        runs2=base2/4
+        print("Base2:",base2)
+        print("---Runs2:",runs2)
+    else:
+        outs=outs+1
+        runs2=0
+    if ba3>rand3:
+        num+=1
+        runs3=base3/4
+        print("Base3:",base3)
+        print("---Runs3:",runs3)
+    else:
+        outs=outs+1
+        runs3=0
+    if ba4>rand4:
+        num+=1
+        runs4=base4/4
+        print("Base4:",base4)
+        print("---Runs4:",runs4)
+    else:
+        outs=outs+1
+        runs4=0
+    if ba5>rand5:
+        num+=1
+        runs5=base5/4
+        print("Base5:",base5)
+        print("---Runs5:",runs5)
+    else:
+        outs=outs+1
+        runs5=0
+    if ba6>rand6:
+        num+=1
+        runs6=base6/4
+        print("Base6:",base6)
+        print("---Runs6:",runs6)
+    else:
+        outs=outs+1
+        runs6=0
+    if ba7>rand7:
+        num+=1
+        runs7=base7/4
+        print("Base7:",base7)
+        print("---Runs7:",runs7)
+    else:
+        outs=outs+1
+        runs7=0
+    if ba8>rand8:
+        num+=1
+        runs8=base8/4
+        print("Base8:",base8)
+        print("---Runs8:",runs8)
+    else:
+        outs+=1
+        runs8=0
+    if ba9>rand9:
+        num+=1
+        runs9=base9/4
+        print("Base9:",base9)
+        print("---Runs9:",runs9)
+    else:
+        outs+=1
+        runs9=0
+if num==9:
+    print("All players have batted, swich sides")
+else:
+    print("Three outs, turn expires")
+print("Team will score" , runs1+runs2+runs3+runs4+runs5+runs6+runs7+runs8+runs9, "runs")
+
+    
+    
+    
+    
+
+
